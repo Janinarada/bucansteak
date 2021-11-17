@@ -1,0 +1,354 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px 9px 15px -9px #000000;
+    box-shadow: 0px 9px 15px -9px #000000;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.menu-mobile,
+.menu-mobile-options {
+    display: none;
+}
+
+.logo {
+    font-size: 34px;
+    color: #7b241c;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.hide{
+    display: none !important;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    margin-bottom: 0 !important;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #7b241c;
+}
+.menu li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu li:hover {
+    color: black;
+}
+
+.menu .menu-active {
+    height: 100%;
+    background-color: #7b241c;
+    color: #fff;
+    padding: 20px;
+}
+
+.imagen-menu {
+    margin-bottom: 20px;
+}
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.banner h3 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.botonWhatsapp {
+    background-color: green;
+    padding: 20px 40px;
+    margin-left: 40px;
+    text-decoration: none;
+    color: inherit;
+    -webkit-box-shadow: 5px 5px 14px 0px #000;
+    box-shadow: 5px 5px 14px 0px #000;
+}
+
+.botonWhatsapp:hover {
+    opacity: 0.8;
+    color: inherit;
+}
+
+.banner a img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+
+.card {
+    padding: 10px;
+    max-width: 300px;
+}
+
+.sub {
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 60px;
+    font-weight: 200;
+    justify-content: flex-start;
+    padding-top: 20px;
+    color: #7b241c;
+}
+
+/* RESERVA */
+.cuadroDomicilio {
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+}
+
+.reserva {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.cuadro {
+    padding: 40px;
+    height: 400px;
+    width: 450px;
+    background-color: #7b241c;
+    color: white;
+}
+
+.input {
+    padding: 10px;
+}
+
+/* MENÚ */
+
+.entradas {
+    height: 400px;
+}
+
+.banner-menu {
+    background-image: url(../img/banner-menu.jpg);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: inherit;
+}
+
+.banner-menu h3 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.carta {
+    width: 100%;
+    height: 100%;
+    background-color: #fbf9f8;
+}
+
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
+    color: #ffc107;
+}
+
+.bg-dark {
+    background-color: #7b241c !important;
+}
+
+/* CONTACTOS */
+
+.banner-contactenos {
+    background-image: url(../img/banner-contacto.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: inherit;
+}
+
+.banner-contactenos h3 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.contacto {
+    height: max-content;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-contactos {
+    padding: 30px;
+    height: 410px;
+    width: 450px;
+    background-color: #7b241c;
+    color: white;
+}
+
+.contactos-img {
+    height: 300px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+
+footer {
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #7b241c;
+    color: white;
+}
+
+footer svg {
+    filter: invert(0%) sepia(0%) saturate(27%) hue-rotate(145deg) brightness(102%) contrast(109%);
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        height: 70px;
+        align-items: center;
+    }
+    .menu-mobile-options {
+        display: block;
+        position: absolute;
+        width: 250px;
+        height: 100%;
+        background-color: #7b241c;
+        z-index: 100;
+    }
+
+    .menu-mobile-options ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        margin-bottom: 0 !important;
+    }
+
+    .menu-mobile-options ul li{
+        margin: 10px 0;
+    }
+
+    .menu-mobile-options ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+
+    .menu-mobile {
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .botonWhatsapp {
+        margin-left: 0;
+        font-size: 24px;
+    }
+
+    .botonWhatsapp img {
+        width: 24px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .imagen-domicilio {
+        display: none;
+    }
+
+    .sub {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        max-width: none;
+    }
+}
+
+/* MENU */
+
+.banner-menu h3 {
+    
+    font-size: 50px;
+   
+}
+
+/* CONTACTOS */
+.contactos-img {
+    display: none;
+  
+}
+
+
+
+
