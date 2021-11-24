@@ -1,4 +1,8 @@
-html,
+@font-face {
+    font-family: 'Andes';
+    src: url(fonts/Andes.ttf);
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -14,16 +18,31 @@ header {
     padding: 0 20px;
 }
 
+.buttonWhatsapp{
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    border-radius: 40px;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .menu-mobile,
 .menu-mobile-options {
     display: none;
 }
 
 .logo {
-    font-size: 34px;
+    font-size: 54px;
     color: #7b241c;
-    font-style: italic;
     margin-top: 15px;
+    font-family: 'Andes';
 }
 
 .hide{
@@ -48,6 +67,7 @@ header {
     font-weight: 500;
     color: #7b241c;
 }
+
 .menu li a {
     text-decoration: none;
     color: inherit;
@@ -69,7 +89,7 @@ header {
 }
 
 .banner {
-    background-image: url(../img/banner.jpg);
+    background-image: url(../img/banner1.jpg);
     width: 100%;
     height: 500px;
     background-repeat: no-repeat;
@@ -121,6 +141,9 @@ header {
     padding: 10px;
     max-width: 300px;
 }
+.card img {
+    height: 280px;            
+}
 
 .sub {
     padding-bottom: 10px;
@@ -131,6 +154,7 @@ header {
     padding-top: 20px;
     color: #7b241c;
 }
+
 
 /* RESERVA */
 .cuadroDomicilio {
@@ -150,10 +174,15 @@ header {
 
 .cuadro {
     padding: 40px;
-    height: 400px;
+    height: 350px;
     width: 450px;
     background-color: #7b241c;
     color: white;
+}
+.imagen-domicilio{
+    height: 350px;
+    width: 450px;
+
 }
 
 .input {
@@ -191,6 +220,13 @@ header {
     background-color: #fbf9f8;
 }
 
+.nav{
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
 .nav-link {
     color: #fff;
 }
@@ -207,7 +243,7 @@ header {
 .banner-contactenos {
     background-image: url(../img/banner-contacto.jpg);
     width: 100%;
-    height: 500px;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -240,25 +276,44 @@ header {
 }
 
 .contactos-img {
-    height: 300px;
-    width: 450px;
+    height: 410px;
+    width: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* footer */
 
-footer {
-    font-size: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+/* FOOTER */
+
+footer {    
+    font-size: 15px;  
     background-color: #7b241c;
     color: white;
 }
 
+.menu-footer p a {    
+    text-decoration: none;
+    color: white;    
+}
+
+
+.menu-footer p a:hover{
+    color: #ffc107;
+}
+
+.link  {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover{
+    color: #ffc107 ;
+}
+
+
 footer svg {
-    filter: invert(0%) sepia(0%) saturate(27%) hue-rotate(145deg) brightness(102%) contrast(109%);
+    filter: invert(85%) sepia(33%) saturate(3652%) hue-rotate(349deg) brightness(101%) contrast(106%);
 }
 
 @media only screen and (max-width: 600px) {
@@ -325,6 +380,10 @@ footer svg {
         display: none;
     }
 
+    .cuadro{
+        padding-top: 17px;
+    }
+
     .sub {
         font-size: 30px;
         margin-bottom: 20px;
@@ -333,9 +392,10 @@ footer svg {
     .card {
         max-width: none;
     }
-}
 
-/* MENU */
+   
+
+    /* MENU */
 
 .banner-menu h3 {
     
@@ -343,11 +403,21 @@ footer svg {
    
 }
 
+.nav{
+    font-size: 15px;
+}
+
 /* CONTACTOS */
 .contactos-img {
     display: none;
   
 }
+
+
+
+}
+
+
 
 
 
